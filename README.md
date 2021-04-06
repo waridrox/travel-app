@@ -26,3 +26,8 @@ Also, we can define a port to run the server in this file if we wish to change t
 
 Run `npm i` to use the node environment, and `npm run build` to start the webpack. Finally run `npm start` to start the app
 
+Preview of the app
+
+https://user-images.githubusercontent.com/58583793/113761914-9f80a080-9735-11eb-94bf-bdc7f2a56bb6.mov
+
+
