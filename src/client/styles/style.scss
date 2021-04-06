@@ -1,0 +1,219 @@
+$primary: #8f8fe6;
+$font-hf: "Liu Jian Mao Cao", cursive; 
+$font-main: "Happy Monkey", cursive;
+
+.navbar-brand,
+#ft-text {
+  font-family: $font-hf;
+}
+body {
+  background-image: url("../media/bg-img-road.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-head {
+  position: fixed;
+  background: $primary;
+  width: 100%;
+}
+#page-footer {
+  background-color: $primary;
+}
+header {
+  height: 11vh;
+}
+main.container {
+  min-height: 83vh;
+  font-family: $font-main;
+}
+#newTripText {
+  padding-top: 20vh;
+}
+#newTrip {
+  text-transform: uppercase;
+}
+#user-field {
+  background-color: transparent;
+  text-transform: uppercase;
+  /* font-weight: 600; */
+}
+#user-form-head {
+  font-weight: 600;
+}
+#travelDate {
+  width: 58vw;
+}
+#see-trips {
+  border-radius: 6vh;
+  border: 1.9px solid #83becd;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+#tripsCorner {
+  // position: fixed;
+  // right: 3vw;
+  width: 11vw;
+  margin-left: auto;
+  font-size: 0.7rem;
+}
+footer,
+.navbar-brand {
+  color: white;
+}
+#trip-quote {
+  font-family: "Cedarville Cursive", cursive;
+  color: rgb(254, 0, 195)
+}
+
+.travelInfo {
+  /* max-height: 33vh; */
+  // line-height: 4vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  // list-style: none;
+  background-color: #7f9ed2;
+  // background-color: #e9ecef;
+  border-radius: 0.25rem;
+  font-family: "Englebert", sans-serif;
+}
+.travelInfo:nth-child(odd) {
+  background: #a3afc2;
+  //   background: linear-gradient(198deg, rgba(2, 0, 36, 1) 0%, rgba(93, 111, 147, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.quote-footer {
+  font-size: 80%;
+  color: #ff0000;
+}
+.trip-photo {
+  max-width: 100%;
+  max-height: 20vh;
+  width: 100%;
+}
+
+.weather-icon {
+  height: 16vh;
+  margin: -3vh -1vh 1vh -3vh; //-3vh for bottom
+}
+
+.trip-footer,
+.trip-header {
+  //   background-color: transparent;
+  border: 1.1px grey solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.weather-temp {
+  font-size: 1.3rem;
+}
+.feels-like {
+  color: #473f3fd9;
+}
+.weather-desc {
+  color: grey;
+}
+.city-weather {
+  font-size: 0.96rem;
+}
+.tripDate {
+  font-size: 0.6rem;
+}
+.trip-extras,
+.travel-notes {
+  display: inline-block;
+  background: #5c7095;
+}
+.travel-notes {
+  overflow: auto;
+  max-width: 100%;
+  width: 100%;
+  resize: none;
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+}
+textarea::placeholder {
+  color: #fff;
+}
+.saveTxt {
+  margin-top: 0vh;
+  float: right;
+}
+.tripBtns {
+  flex-direction: column-reverse;
+  align-items: self-start;
+}
+.weather-terms {
+  font-size: 0.7rem;
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .trip-extras {
+    margin-left: 11vw !important;
+  }
+  .tripBtns {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* For desktop: */
+  body {
+    background-size: cover;
+  }
+  main.container {
+    width: 65%;
+  }
+  .rmvTrip {
+    margin-top: 1vh;
+  }
+  #travelDate {
+    width: 21vw;
+  }
+  .user-info {
+    display: flex;
+  }
+  #addTrip {
+    margin-top: 0px;
+  }
+  #newTripText {
+    padding-top: 40vh;
+  }
+  #savedTripText {
+    font-size: 1.1rem;
+  }
+  .travelInfo {
+    flex-wrap: wrap;
+  }
+  .trip-photo {
+    // max-height: 30vh;
+    width: 18vw; //width: auto
+  }
+  .travel-notes {
+    // max-height: 19vh;
+    width: 17vw; //100%
+  }
+  .trip-extras {
+    margin-left: 8vw !important;
+  }
+}
+
+@media only screen and (min-width: 1044px) {
+  // .travel-notes {
+  //   width: 23vw;
+  // }
+  .trip-extras {
+    margin-left: 11vw !important;
+  }
+}
